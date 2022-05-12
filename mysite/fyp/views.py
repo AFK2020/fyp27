@@ -260,8 +260,12 @@ def generate_report(request):
     for i in range(0,10):
         row_y=row_y-15
 
+        # c.drawString(row_x1,row_y,str(i))
+        # c.drawString(rowx2,row_y,str(i*2))
+        # c.drawString(rowx3,row_y,str("00:12:"+str(i)))
+
         c.drawString(row_x1,row_y,str(i))
-        c.drawString(rowx2,row_y,str(i*2))
+        c.drawString(rowx2,row_y,str())
         c.drawString(rowx3,row_y,str("00:12:"+str(i)))
 
     c.showPage()
